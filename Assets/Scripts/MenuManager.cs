@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Required for LoadScene
+using UnityEngine.SceneManagement; 
 
 public class MenuManager : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class MenuManager : MonoBehaviour
     [Header("Settings")]
     public float duration = 0.5f;
     public float slideDistance = 1000f;
+    // This string is correct, provided you use the fix in OnPlayPressed below
     public string gameSceneName = "GameScene"; 
 
     private void Start()
@@ -33,7 +34,9 @@ public class MenuManager : MonoBehaviour
 
     public void OnPlayPressed()
     {
-        SceneManager.LoadScene(gameSceneName);
+        // FIX: We explicitly type "UnityEngine.SceneManagement.SceneManager"
+        // This bypasses the error if you accidentally named another script "SceneManager"
+        UnityEngine.SceneManagement.SceneManager.LoadScene(gameSceneName);
     }
 
     public void OnSettingsPressed()

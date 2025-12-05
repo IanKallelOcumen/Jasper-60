@@ -52,5 +52,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Jasper-60_.slnx"
+    "dotnet.defaultSolution": "Jasper-60.slnx"
 }
