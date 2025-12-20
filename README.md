@@ -1,7 +1,3 @@
-Here is a comprehensive `README.md` for your project. I have structured it to explain how the specific scripts you uploaded work together to create the **Bayanihan Hill Climb** game.
-
----
-
 # 🏠 Bayanihan Hill Climb
 
 A 2D physics-based endless runner inspired by the Filipino tradition of *Bayanihan* (moving a house). Players control a team of carriers transporting a *Bahay Kubo* (nipa hut) across uneven terrain, balancing speed with stability.
