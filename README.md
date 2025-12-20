@@ -73,13 +73,6 @@ The Bayanihan carrier rig requires a specific setup for the physics to work:
 * **`Coin.cs`**: Adds currency to `PlayerPrefs` and destroys itself upon collision with the Player.
 * **`PickupAnimation.cs`**: A visual effect script that makes items float up and fade away when collected.
 
-## ⚠️ Known Dependencies
-
-The current codebase references the following classes which must be ensured in the project:
-
-* **`UIController`**: Referenced by `GameManager` to update UI elements.
-* **`PlayerController`**: Referenced by `MeterNeedle` to get input data.
-
 ---
 
 *Generated based on source code provided.*
